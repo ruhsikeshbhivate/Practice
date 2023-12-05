@@ -21,7 +21,8 @@ public class WindowHandles {
 		driver.get("https://www.google.com");
 		String title = driver.getTitle();
 		System.out.println("First Tab: "+title);
-		
+
+		//switch selenium focus to the new window...
 		driver.switchTo().newWindow(WindowType.TAB);
 		driver.get("https://www.facebook.com/");
 		String title2 = driver.getTitle();
