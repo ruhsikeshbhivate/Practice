@@ -20,10 +20,12 @@ public class getBrokenLink {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--remote-allow-origins=*");
 		WebDriver driver = new ChromeDriver(options);
-		
+
+		//Maximixe window size....
 		driver.manage().window().maximize();
 		driver.get("https://stage.hellohero.com/login");
-		
+
+		//login by admin...
 		WebElement username = driver.findElement(By.xpath("//input[@id=\"login\"]"));
 		username.sendKeys("sagar_admin");
 		
